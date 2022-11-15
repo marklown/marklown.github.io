@@ -1,5 +1,9 @@
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 body {
-  font-family: "Cardo", serif;
+  font-family: var(--system-ui);
 }
 
 h1,
@@ -8,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--system-ui);
   text-transform: uppercase;
 }
 
@@ -16,41 +20,6 @@ h6 {
   max-width: 1000px;
   margin: auto;
 }
-
-/* Navbar */
-
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-}
-
-.nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-}
-
-.nav a {
-  margin: 0px 10px 0px 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* Home */
-
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Books */
 
 .books {
   display: flex;
@@ -62,12 +31,4 @@ h6 {
   list-style-type: none;
   text-align: center;
   padding: 0;
-}
-
-/* Astronomy */
-
-.astronomy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
